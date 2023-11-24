@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "h h"
+    "n n"
+    "ar as"
+    "f f";
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+aside{
+    background-color: white;
+    border: 1px solid grey;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+nav li {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: white;
+  }
+
+footer{
+    background-color: rgb(173, 236, 215);
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(173, 236, 215);
+}
+
+
+
+div h4{
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(173, 236, 215);
+}
+
+aside {
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+aside button{
+    width: 200px;
+}
+
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+article{
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+}
+
+@media screen and (max-width:800px) {
+    article {
+        grid-template-columns: 1fr 1fr;
+    }
+    nav{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
+    }
+}
+
+@media screen and (max-width:500px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "ar"
+        "as"
+        "f";
+    }
+    article {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+img{
+    width:100%;
+
+}
+
+.termek{
+    display: grid;
+    grid-template-rows: 10% 70% 15% 5%;
+    border: 1px solid grey;
+    margin: 10px;
+    padding: 10px;
+}
+
+.fizetes{
+    display: grid;
+    grid-template-rows: 100%;
+    border: 1px solid grey;
+    margin: 10px;
+    padding: 10px;
+}
+
